@@ -17,4 +17,5 @@ try {
   console.error(e);
 }
 const db = cluster.db("totahim");
+
 export default db;
