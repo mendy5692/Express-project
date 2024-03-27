@@ -27,7 +27,7 @@ router.get("/:_id", async (req, res, next) => {
 
 router.post("/", async (req, res, next) => {
   try {
-    const product = await judaicaCollection.insertOne(req.body);
+    const product = await judaicaCollection.insertMany(req.body);
     res.status(201).send(product.insertedId);
   } catch (error) {
     next(error);
