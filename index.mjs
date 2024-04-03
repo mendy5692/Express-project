@@ -3,6 +3,10 @@ import judaica from "./judaica.mjs";
 import art from "./art.mjs";
 import decorations from "./decorations.mjs";
 import cors from "cors";
+import dotenv from "dotenv";
+dotenv.config();
+
+
 const app = express();
 const port = 3001;
 
