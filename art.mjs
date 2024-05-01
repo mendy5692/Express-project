@@ -7,7 +7,6 @@ const artCollection = db.collection("art");
 router.get("/", async (req, res, next) => {
   try {
     const art = await artCollection.find().toArray();
-    console.error("hahahaahhahahaha")
     res.status(200).json(art);
   } catch (error) {
     next(error);
